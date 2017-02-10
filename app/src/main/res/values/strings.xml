@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Lab3_gduffy</string>
+    <string name="OS">Ohio State</string>
+    <string name="FS">Florida State </string>
+    <string name="WF">Wake Forest </string>
+    <string name="BC">Boston College</string>
+    <string name="NCS">North Carolina State</string>
+    <string name="GT">Georgia Tech</string>
+    <string name="NV">North Virginia</string>
+    <string name="CS">Chicago Sate</string>
+    <string-array
+        name="team_array">
+        <item>@string/OS</item>
+        <item>@string/FS</item>
+        <item>@string/WF</item>
+        <item>@string/BC</item>
+        <item>@string/NCS</item>
+        <item>@string/GT</item>
+        <item>@string/NV</item>
+        <item>@string/CS</item>
+    </string-array>
+</resources>
+
