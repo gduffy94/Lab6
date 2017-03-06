@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailListView"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="21dp"
+        android:id="@+id/weekDay" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/weekDay"
+        android:layout_toEndOf="@+id/weekDay"
+        android:layout_marginStart="13dp"
+        android:id="@+id/Date" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weekDay"
+        android:layout_alignStart="@+id/weekDay"
+        android:layout_marginTop="11dp"
+        android:id="@+id/stadium" />
+
+    <Button
+        android:text="Camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:id="@+id/cameraButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="clicked"
+        android:layout_marginEnd="29dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/irish"
+        android:id="@+id/teamTwoLogo"
+        android:layout_marginStart="23dp"
+        android:layout_above="@+id/cameraButton"
+        android:layout_toEndOf="@+id/dayTime"
+        android:layout_marginBottom="44dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teamOneRecord"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/teamOneMascot"
+        android:layout_alignStart="@+id/teamOneMascot" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dayTime"
+        android:layout_alignBaseline="@+id/Date"
+        android:layout_alignBottom="@+id/Date"
+        android:layout_toEndOf="@+id/teamOneName"
+        android:layout_marginStart="30dp" />
+
+    <TextView
+        android:text="Notre Dame, IN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Location"
+        android:layout_alignBaseline="@+id/stadium"
+        android:layout_alignBottom="@+id/stadium"
+        android:layout_toEndOf="@+id/teamOneName"
+        android:layout_marginStart="15dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:id="@+id/gameScore"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/timeLeft" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teamOneName"
+        android:layout_below="@+id/Location"
+        android:layout_toEndOf="@+id/Date"
+        android:layout_marginTop="58dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/fsu"
+        android:id="@+id/teamOneLogo"
+        android:layout_below="@+id/stadium"
+        android:layout_alignStart="@+id/stadium"
+        android:layout_marginTop="46dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teamOneMascot"
+        android:textSize="30sp"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/teamOneName"
+        android:layout_alignStart="@+id/teamOneName" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teamTwoName"
+        android:layout_above="@+id/teamTwoMascot"
+        android:layout_alignStart="@+id/timeLeft" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:id="@+id/teamTwoMascot"
+        android:layout_above="@+id/teamTwoRecord"
+        android:layout_alignLeft="@+id/teamTwoName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teamTwoRecord"
+        android:layout_above="@+id/cameraButton"
+        android:layout_alignStart="@+id/teamTwoName" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeLeft"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/gameScore"
+        android:layout_alignStart="@+id/teamOneRecord" />
+</RelativeLayout>
