@@ -49,6 +49,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/irish"
+        android:id="@+id/photo_taken"
+        android:layout_marginStart="23dp"
+        android:layout_above="@+id/cameraButton"
+        android:layout_toEndOf="@+id/dayTime"
+        android:layout_marginBottom="44dp" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/irish"
         android:id="@+id/teamTwoLogo"
         android:layout_marginStart="23dp"
         android:layout_above="@+id/cameraButton"
